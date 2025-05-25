@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jillian's Cozy Nook</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+  body {
+    background: linear-gradient(135deg, #f5e6d3, #f0d8c9);
+    font-family: 'Roboto', sans-serif;
+    color: #4a3c31;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #f3c5a0;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin: 0;
+    color: #663a27;
+    text-shadow: 1px 1px 0 #f9f3f0;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+    background: #fff8f0;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 3px 8px rgba(102, 58, 39, 0.2);
+  }
+
+  section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #a65333;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #a65333;
+    padding-bottom: 0.3rem;
+  }
+
+  /* About Me */
+  #about p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #5a4634;
+  }
+
+  /* Gallery */
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  #gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(102, 58, 39, 0.3);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  #gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Quotes */
+  #quotes blockquote {
+    font-style: italic;
+    color: #7d5a42;
+    border-left: 4px solid #a65333;
+    padding-left: 1rem;
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+    background: #f9f2ea;
+    border-radius: 6px;
+  }
+
+  #quotes blockquote::before {
+    content: "“";
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    vertical-align: top;
+    color: #a65333;
+    margin-right: 0.2rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #7d5a42;
+  }
+
+  /* 80s subtle pattern background on header */
+  header {
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255 255 255 / 0.15) 10%, transparent 11%),
+      radial-gradient(circle at 80% 80%, rgba(255 255 255 / 0.15) 10%, transparent 11%);
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jillian's Cozy Nook</h1>
+  <p>Knitting & Nostalgia — Grandma Vibes with an 80s Twist</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Jillian — a passionate knitter who loves cozy afternoons spent with yarn, needles, and nostalgic memories.
+      Inspired by the gentle warmth of grandma’s wisdom and the colorful energy of the 80s, I blend tradition with a playful, retro spirit.
+      Whether it’s crafting a new blanket or reminiscing about cassette tapes and neon leg warmers, I cherish the simple joys that make life sweet.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>My Knitting Projects</h2>
+    <img src="https://images.unsplash.com/photo-1543165797-1e9f8cce5ac1?auto=format&fit=crop&w=400&q=80" alt="Knitting project 1" />
+    <img src="https://images.unsplash.com/photo-1509228627152-0ee487d2f3d1?auto=format&fit=crop&w=400&q=80" alt="Knitting project 2" />
+    <img src="https://images.unsplash.com/photo-1520962910963-7266c07737a9?auto=format&fit=crop&w=400&q=80" alt="Knitting project 3" />
+    <img src="https://images.unsplash.com/photo-1506719040631-83f9a7edc79d?auto=format&fit=crop&w=400&q=80" alt="Knitting project 4" />
+  </section>
+
+  <section id="quotes">
+    <h2>Favorite Quotes</h2>
+    <blockquote>
+      “Life is a tapestry, woven with the threads of patience and love.”
+    </blockquote>
+    <blockquote>
+      “Keep calm and knit on.”
+    </blockquote>
+    <blockquote>
+      “The 80s taught us to be bold, the yarn reminds us to be gentle.”
+    </blockquote>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Jillian’s Cozy Nook
+</footer>
+
+</body>
+</html>
